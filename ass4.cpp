@@ -34,10 +34,14 @@ int main(){
     cout<<"enter number of shops and number of persons";
     cin>>n>>k;
     vector<int> S(n),E(n);
-    cout<<"Enter start and end time of shops";
+    cout<<"Enter start time of shops";
     for(int i=0;i<n;i++){
-        cin>>S[i]>>E[i];
-    }  
+        cin>>S[i];
+    }
+    cout<<"Enter end time of shops";
+    for(int i=0;i<n;i++){
+        cin>>E[i];
+    }
     cout << "Maximum shops visited = " << KPerson(S,E,k);
     return 0;
 }
